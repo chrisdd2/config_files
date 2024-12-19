@@ -1,0 +1,39 @@
+theme = "catppuccin_macchiato"
+
+[editor]
+completion-replace=true
+true-color=true
+text-width=120
+insert-final-newline=true
+end-of-line-diagnostics="hint"
+default-yank-register="+"
+clipboard-provider="win32-yank"
+
+[editor.lsp]
+# rust is hard
+display-inlay-hints=true
+
+[editor.auto-save]
+# vs code's fault
+focus-lost=true
+after-delay.enable = true
+
+[keys.insert]
+# je suis pro
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown= "no_op"
+home = "no_op"
+
+end = "no_op"
+
+[keys.normal]
+# using home/end is bizzare
+"0" = "goto_line_start"
+"$" = "goto_line_end"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
